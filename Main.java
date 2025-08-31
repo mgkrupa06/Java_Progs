@@ -4,12 +4,10 @@ public class Main {
     public static void main(String[] args) {
         // 1) constructor chain: Vehicle -> Bicycle -> EBike
         EBike e = new EBike("EB-101", 50);
-        e.deliver("Book", "Library");
+        e.deliver("Sandwich", "Library");
 
-        System.out.println("------------------");
-
-        // 2) abstract restriction
-        // Vehicle v = new Vehicle("V-1");  // ❌ should not compile
+        // 2) abstract restriction (comment to see error):
+        // Vehicle v = new Vehicle("V-1"); // ❌ should not compile
 
         // 3) interface + final rule check
         Drone d = new Drone("DR-1");
